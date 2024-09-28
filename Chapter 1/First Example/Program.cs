@@ -1,10 +1,2 @@
-﻿namespace First_Example
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
-}
+﻿Console.WriteLine("Hello C#");
+throw new Exception();
