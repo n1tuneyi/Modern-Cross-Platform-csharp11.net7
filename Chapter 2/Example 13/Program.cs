@@ -16,3 +16,7 @@ string formatted = string.Format(
                 );
 
 Console.WriteLine(formatted);
+
+
+
+Console.WriteLine($"{numberOfApples} apples cost {pricePerApple * numberOfApples:C}");
