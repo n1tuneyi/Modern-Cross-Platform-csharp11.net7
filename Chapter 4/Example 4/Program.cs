@@ -1,2 +1,3 @@
 ﻿//RunFactorial();
-RunFibImperative();
+//RunFibImperative();
+RunFibFunctional();
