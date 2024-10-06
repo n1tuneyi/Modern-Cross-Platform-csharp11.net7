@@ -21,6 +21,19 @@ internal partial class Program
         }
     }
 
+    static int FibImperative(int term)
+    {
+        if (term == 1)
+            return 0;
+        if (term == 2)
+            return 1;
+        else
+        {
+            return FibImperative(term - 2) + FibImperative(term - 1);
+        }
+        
+    }
+
     static void RunFactorial()
     {
         for (int i = -2; i <= 15; i++)
@@ -37,6 +50,14 @@ internal partial class Program
             {
                 WriteLine($"{i}! throws {ex.GetType()}: {ex.Message}");
             }
+        }
+    }
+
+    static void RunFibImperative()
+    {
+        for(int i = 1;i <= 30;i++)
+        {
+            WriteLine("The {0} term of the Fibonacci Sequence is {1:N0}.", arg0: i, arg1: FibImperative(term: i));
         }
     }
 
