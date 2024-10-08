@@ -64,3 +64,21 @@ WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.", arg0:
 Person gunny = new(initialName: "Gunny", homePlanet: "Mars");
 WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.", arg0: gunny.Name, arg1: gunny.HomePlanet,
 arg2: gunny.Instantiated);
+
+bob.WriteToConsole();
+
+WriteLine(bob.GetOrigin());
+
+(string, int) fruit = bob.GetFruit();
+
+WriteLine($"{fruit.Item1}, {fruit.Item2} there are.");
+
+var fruitNamed = bob.GetNamedFruit();
+
+WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}.");
+
+var thing1 = ("Neville", 4);
+WriteLine($"{thing1.Item1} has {thing1.Item2} children.");
+
+var thing2 = (bob.Name, bob.Children.Count);
+WriteLine($"{thing2.Name} has {thing2.Count} children.");
