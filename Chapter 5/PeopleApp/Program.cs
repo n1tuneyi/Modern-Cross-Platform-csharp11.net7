@@ -32,9 +32,26 @@ Person alice = new()
 bob.Children.Add(new Person { Name = "Alfred" }); 
 bob.Children.Add(new() { Name = "Zoe" }); 
 
-WriteLine($"{bob.Name} has {bob.Children.Count} children:");
+//WriteLine($"{bob.Name} has {bob.Children.Count} children:");
 
-foreach (Person p in bob.Children)
-{
-    WriteLine($"> {p.Name}");
-}
+//foreach (Person p in bob.Children)
+//{
+//    WriteLine($"> {p.Name}");
+//}
+
+
+BankAccount.InterestRate = 0.012M; 
+BankAccount jonesAccount = new();
+
+jonesAccount.AccountName = "Mrs. Jones";
+jonesAccount.Balance = 2400;
+
+WriteLine(format: "{0} earned {1:C} interest.",arg0: jonesAccount.AccountName, 
+          arg1: jonesAccount.Balance * BankAccount.InterestRate);
+
+BankAccount gerrierAccount = new();
+gerrierAccount.AccountName = "Ms. Gerrier";
+gerrierAccount.Balance = 98;
+
+WriteLine(format: "{0} earned {1:C} interest.", arg0: gerrierAccount.AccountName,
+          arg1: gerrierAccount.Balance * BankAccount.InterestRate);
