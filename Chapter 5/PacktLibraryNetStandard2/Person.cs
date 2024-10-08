@@ -2,7 +2,7 @@
 
 namespace Packt.Shared;
 
-public class Person: object
+public class Person : object
 {
     public string? Name;
 
@@ -25,5 +25,13 @@ public class Person: object
         Name = "Unknown";
         Instantiated = DateTime.Now;
     }
+
+    public Person(string initialName, string homePlanet)
+    {
+        Name = initialName;
+        HomePlanet = homePlanet;
+        Instantiated = DateTime.Now;
+    }
+
 }
 
