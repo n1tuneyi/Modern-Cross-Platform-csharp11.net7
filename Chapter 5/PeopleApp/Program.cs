@@ -21,16 +21,16 @@ bob.BucketList = WondersOfTheAncientWorld.HangingGardensOfBabylon | WondersOfThe
 //          arg2: (int)bob.FavoriteAncientWonder);
 
 
-Person alice = new()
-{
-    Name = "Alice Jones",
-    DateOfBirth = new(1998, 3, 7)
-};
+//Person alice = new()
+//{
+//    Name = "Alice Jones",
+//    DateOfBirth = new(1998, 3, 7)
+//};
 
 //WriteLine(format: "{0} was born on {1:dd MMM yy}", arg0: alice.Name, arg1: alice.DateOfBirth);
 
-bob.Children.Add(new Person { Name = "Alfred" }); 
-bob.Children.Add(new() { Name = "Zoe" }); 
+//bob.Children.Add(new Person { Name = "Alfred" }); 
+//bob.Children.Add(new() { Name = "Zoe" }); 
 
 //WriteLine($"{bob.Name} has {bob.Children.Count} children:");
 
@@ -55,3 +55,8 @@ gerrierAccount.Balance = 98;
 
 WriteLine(format: "{0} earned {1:C} interest.", arg0: gerrierAccount.AccountName,
           arg1: gerrierAccount.Balance * BankAccount.InterestRate);
+
+Person blankPerson = new();
+WriteLine(format: "{0} of {1} was created at {2:hh:mm:ss} on a {2:dddd}.", arg0: blankPerson.Name,
+          arg1: blankPerson.HomePlanet,
+          arg2: blankPerson.Instantiated);
