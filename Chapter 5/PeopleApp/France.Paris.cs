@@ -1,0 +1,6 @@
+﻿
+namespace France;
+    class Paris
+    {
+    }
+
