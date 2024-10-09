@@ -1,5 +1,6 @@
 ﻿
 using Packt.Shared;
+using System.Threading;
 
 Person bob = new();
 
@@ -172,14 +173,55 @@ sam.Children.Add(new()
     DateOfBirth = new(2020, 12, 24)
 });
 
-List<int> lst = [323, 23, 12, 12];
+
+//WriteLine($"Sam's first child is {sam.Children[0].Name}.");
+//WriteLine($"Sam's second child is {sam.Children[1].Name}.");
+
+//WriteLine($"Sam's first child is {sam[0].Name}.");
+
+//WriteLine($"Sam's second child is {sam[1].Name}.");
+
+//WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
 
 
-WriteLine($"Sam's first child is {sam.Children[0].Name}.");
-WriteLine($"Sam's second child is {sam.Children[1].Name}.");
+Person lamech = new() { Name = "Lamech" };
+Person adah = new() { Name = "Adah" };
+Person zillah = new() { Name = "Zillah" };
 
-WriteLine($"Sam's first child is {sam[0].Name}.");
+lamech.Marry(adah);
 
-WriteLine($"Sam's second child is {sam[1].Name}.");
+//if (zillah + lamech)
+//{
+//    WriteLine($"{zillah.Name} and {lamech.Name} successfully got married.");
+//}
+////Person.Marry(zillah, lamech);
 
-WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
+//WriteLine($"{lamech.Name} is married to {lamech.Spouse?.Name ?? "nobody"}");
+//WriteLine($"{adah.Name} is married to {adah.Spouse?.Name ?? "nobody"}");
+//WriteLine($"{zillah.Name} is married to {zillah.Spouse?.Name ?? "nobody"}");
+
+//Person baby1 = lamech.ProcreateWith(adah);
+
+//baby1.Name = "Jabal";
+//WriteLine($"{baby1.Name} was born on {baby1.DateOfBirth}");
+
+//Person baby2 = Person.Procreate(zillah, lamech);
+
+//Person baby3 = lamech * adah;
+//baby3.Name = "Jubal";
+
+//Person baby4 = zillah * lamech;
+//baby4.Name = "Naamah";
+
+
+//baby2.Name = "Tubalcain";
+//WriteLine($"{lamech.Name} has {lamech.Children.Count} children.");
+//WriteLine($"{adah.Name} has {adah.Children.Count} children.");
+//WriteLine($"{zillah.Name} has {zillah.Children.Count} children.");
+//for (int i = 0; i < lamech.Children.Count; i++)
+//{
+//    WriteLine(format: "{0}'s child #{1} is named \"{2}\".",
+//    arg0: lamech.Name, arg1: i, arg2: lamech[i].Name);
+//}
+
+
