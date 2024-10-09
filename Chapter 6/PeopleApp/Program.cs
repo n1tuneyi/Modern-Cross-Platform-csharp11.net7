@@ -30,10 +30,23 @@ key = 3;
 //WriteLine(format: "Key {0} has value: {1}", arg0: key, arg1: lookupIntString[key]);
 
 // Has to be += or -= because Shout is preceded with event keyword
-harry.Shout += Harry_Shout;
-harry.Shout += Harry_Shout2;
+//harry.Shout += Harry_Shout;
+//harry.Shout += Harry_Shout2;
 
-harry.Poke();
-harry.Poke();
-harry.Poke();
-harry.Poke();
+//harry.Poke();
+//harry.Poke();
+//harry.Poke();
+//harry.Poke();
+
+Person?[] people = {
+    null,
+    new() { Name = "Simon" },
+    new() { Name = "Jenny" },
+    new() { Name = "Adam" },
+    new() { Name = null },
+    new() { Name = "Richard" }
+};
+
+OutputPeopleNames(people, "Initial list of people:");
+Array.Sort(people);
+OutputPeopleNames(people, "After sorting using Person's IComparable implementation:");
