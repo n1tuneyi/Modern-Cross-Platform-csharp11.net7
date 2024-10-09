@@ -90,8 +90,17 @@ arg2: gunny.Instantiated);
 
 var (name1, dob1) = bob;
 
-WriteLine($"Deconstructed: {name1}, {dob1}");
+//WriteLine($"Deconstructed: {name1}, {dob1}");
 
 var (name2, dob2, fav2) = bob;
 
-WriteLine($"Deconstructed: {name2}, {dob2}, {fav2}");
+//WriteLine($"Deconstructed: {name2}, {dob2}, {fav2}");
+
+
+WriteLine(bob.OptionalParameters());
+
+WriteLine(bob.OptionalParameters("Jump!", 98.5));
+
+WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide!"));
+
+WriteLine(bob.OptionalParameters("Poke!", active: false));
