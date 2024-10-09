@@ -130,17 +130,56 @@ Person sam = new()
 
 
 sam.FavoriteIceCream = "Chocolate Fudge";
-WriteLine($"Sam's favorite ice-cream flavor is {sam.FavoriteIceCream}.");
-string color = "Red";
+//WriteLine($"Sam's favorite ice-cream flavor is {sam.FavoriteIceCream}.");
+//string color = "Red";
 
-try
+//try
+//{
+//    sam.FavoritePrimaryColor = color;
+//    WriteLine($"Sam's favorite primary color is {sam.
+//    FavoritePrimaryColor}.");
+//}
+//catch (Exception ex)
+//{
+//    WriteLine("Tried to set {0} to '{1}': {2}",
+//    nameof(sam.FavoritePrimaryColor), color, ex.Message);
+//}
+
+
+//Book book = new()
+//{
+//    Isbn = "978-1803237800",
+//    Title = "C# 11 and .NET 7 - Modern Cross-Platform Development Fundamentals"
+//};
+
+Book book = new(isbn: "978-1803237800", title: "C# 11 and .NET 7 - Modern Cross-Platform Development Fundamentals")
+                    {
+                    Author = "Mark J. Price",
+                    PageCount = 821
+                    };
+
+WriteLine("{0}: {1} written by {2} has {3:N0} pages.", book.Isbn, book.Title, book.Author, book.PageCount);
+
+sam.Children.Add(new()
 {
-    sam.FavoritePrimaryColor = color;
-    WriteLine($"Sam's favorite primary color is {sam.
-    FavoritePrimaryColor}.");
-}
-catch (Exception ex)
+    Name = "Charlie",
+    DateOfBirth = new(2010, 3, 18)
+});
+
+sam.Children.Add(new()
 {
-    WriteLine("Tried to set {0} to '{1}': {2}",
-    nameof(sam.FavoritePrimaryColor), color, ex.Message);
-}
+    Name = "Ella",
+    DateOfBirth = new(2020, 12, 24)
+});
+
+List<int> lst = [323, 23, 12, 12];
+
+
+WriteLine($"Sam's first child is {sam.Children[0].Name}.");
+WriteLine($"Sam's second child is {sam.Children[1].Name}.");
+
+WriteLine($"Sam's first child is {sam[0].Name}.");
+
+WriteLine($"Sam's second child is {sam[1].Name}.");
+
+WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
