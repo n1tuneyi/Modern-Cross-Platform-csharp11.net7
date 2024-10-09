@@ -2,7 +2,7 @@
 
 namespace Packt.Shared;
 
-public class Person : object
+public partial class Person
 {
     public string? Name;
 
@@ -65,6 +65,24 @@ public class Person : object
         name = Name;
         dob = DateOfBirth;
         fav = FavoriteAncientWonder;
+    }
+
+    public string OptionalParameters(string command = "Run!",
+                            double number = 0.0, bool active = true)
+    {
+        return string.Format(
+        format: "command is {0}, number is {1}, active is {2}",
+        arg0: command,
+        arg1: number,
+        arg2: active);
+    }
+
+    public void PassingParameters(int x, ref int y, out int z)
+    {
+        z = 99;
+        x++;
+        y++;
+        z++;
     }
 
 }
