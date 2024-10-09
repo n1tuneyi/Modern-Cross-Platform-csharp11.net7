@@ -243,28 +243,40 @@ Passenger[] passengers = [
     new CoachClassPassenger { CarryOnKG = 0, Name = "Amit" },
 ];
 
-foreach (Passenger passenger in passengers)
+//foreach (Passenger passenger in passengers)
+//{
+//    decimal flightCost = passenger switch
+//    {
+//        //FirstClassPassenger p when p.AirMiles > 35000 => 1500M,
+//        //FirstClassPassenger p when p.AirMiles > 15000 => 1750M,
+//        //FirstClassPassenger _ => 2000M,
+//        //FirstClassPassenger p => p.AirMiles switch
+//        //{
+//        //    > 35000 => 1500M,
+//        //    > 15000 => 1750M,
+//        //    _ => 2000M
+//        //},
+
+//        FirstClassPassenger { AirMiles: > 35000 } => 1500,
+//        FirstClassPassenger { AirMiles: > 15000 } => 1750M,
+//        FirstClassPassenger => 2000M,
+
+//        BusinessClassPassenger => 1000M,
+//        CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
+//        CoachClassPassenger => 650M,
+//        _ => 800M
+//    };
+//    WriteLine($"Flight costs {flightCost:C} for {passenger}");
+//}
+
+ImmutableVehicle car = new()
 {
-    decimal flightCost = passenger switch
-    {
-        //FirstClassPassenger p when p.AirMiles > 35000 => 1500M,
-        //FirstClassPassenger p when p.AirMiles > 15000 => 1750M,
-        //FirstClassPassenger _ => 2000M,
-        //FirstClassPassenger p => p.AirMiles switch
-        //{
-        //    > 35000 => 1500M,
-        //    > 15000 => 1750M,
-        //    _ => 2000M
-        //},
+    Brand = "Mazda MX-5 RF",
+    Color = "Soul Red Crystal Metallic",
+    Wheels = 4
+};
 
-        FirstClassPassenger { AirMiles: > 35000 } => 1500,
-        FirstClassPassenger { AirMiles: > 15000 } => 1750M,
-        FirstClassPassenger => 2000M,
+ImmutableVehicle repaintedCar = car with { Color = "Polymetal Grey Metallic" };
 
-        BusinessClassPassenger => 1000M,
-        CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
-        CoachClassPassenger => 650M,
-        _ => 800M
-    };
-    WriteLine($"Flight costs {flightCost:C} for {passenger}");
-}
+WriteLine($"Original car color was {car.Color}.");
+WriteLine($"New car color is {repaintedCar.Color}.");
