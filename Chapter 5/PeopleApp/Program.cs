@@ -41,7 +41,7 @@ bob.BucketList = WondersOfTheAncientWorld.HangingGardensOfBabylon | WondersOfThe
 //}
 
 
-BankAccount.InterestRate = 0.012M; 
+BankAccount.InterestRate = 0.012M;
 BankAccount jonesAccount = new();
 
 jonesAccount.AccountName = "Mrs. Jones";
@@ -154,10 +154,10 @@ sam.FavoriteIceCream = "Chocolate Fudge";
 //};
 
 Book book = new(isbn: "978-1803237800", title: "C# 11 and .NET 7 - Modern Cross-Platform Development Fundamentals")
-                    {
-                    Author = "Mark J. Price",
-                    PageCount = 821
-                    };
+{
+    Author = "Mark J. Price",
+    PageCount = 821
+};
 
 WriteLine("{0}: {1} written by {2} has {3:N0} pages.", book.Isbn, book.Title, book.Author, book.PageCount);
 
@@ -184,11 +184,11 @@ sam.Children.Add(new()
 //WriteLine($"Sam's child named Ella is {sam["Ella"].Age} years old.");
 
 
-Person lamech = new() { Name = "Lamech" };
-Person adah = new() { Name = "Adah" };
-Person zillah = new() { Name = "Zillah" };
+//Person lamech = new() { Name = "Lamech" };
+//Person adah = new() { Name = "Adah" };
+//Person zillah = new() { Name = "Zillah" };
 
-lamech.Marry(adah);
+//lamech.Marry(adah);
 
 //if (zillah + lamech)
 //{
@@ -224,4 +224,35 @@ lamech.Marry(adah);
 //    arg0: lamech.Name, arg1: i, arg2: lamech[i].Name);
 //}
 
+//int number = -1; 
 
+//try
+//{
+//    WriteLine($"{number}! is {Person.Factorial(number)}");
+//}
+//catch (Exception ex)
+//{
+//    WriteLine($"{ex.GetType().Name} says: {ex.Message} number was {number}.");
+//}
+
+Passenger[] passengers = [
+    new FirstClassPassenger { AirMiles = 1_419, Name = "Suman" },
+    new FirstClassPassenger { AirMiles = 16_562, Name = "Lucy" },
+    new BusinessClassPassenger { Name = "Janice" },
+    new CoachClassPassenger { CarryOnKG = 25.7, Name = "Dave" },new CoachClassPassenger { CarryOnKG = 0, Name = "Amit" },
+];
+
+foreach (Passenger passenger in passengers)
+{
+    decimal flightCost = passenger switch
+    {
+        FirstClassPassenger p when p.AirMiles > 35000 => 1500M,
+        FirstClassPassenger p when p.AirMiles > 15000 => 1750M,
+        FirstClassPassenger _ => 2000M,
+        BusinessClassPassenger _ => 1000M,
+        CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
+        CoachClassPassenger _ => 650M,
+        _ => 800M
+    };
+    WriteLine($"Flight costs {flightCost:C} for {passenger}");
+}
