@@ -278,5 +278,11 @@ ImmutableVehicle car = new()
 
 ImmutableVehicle repaintedCar = car with { Color = "Polymetal Grey Metallic" };
 
-WriteLine($"Original car color was {car.Color}.");
-WriteLine($"New car color is {repaintedCar.Color}.");
+//WriteLine($"Original car color was {car.Color}.");
+//WriteLine($"New car color is {repaintedCar.Color}.");
+
+ImmutableAnimal oscar = new("Oscar", "Labrador");
+
+var (who, what) = oscar;
+
+WriteLine($"{who} is a {what}.");
