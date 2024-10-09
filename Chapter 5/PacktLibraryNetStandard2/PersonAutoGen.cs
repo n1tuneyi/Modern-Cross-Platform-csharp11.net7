@@ -110,5 +110,22 @@ public partial class Person
     {
         return Procreate(p1, p2);
     }
+
+    public static int Factorial(int number)
+    {
+        if (number < 0)
+        {
+            throw new ArgumentException(
+            $"{nameof(number)} cannot be less than zero.");
+        }
+
+        return localFactorial(number);
+
+        statint localFactorial(int localNumber) 
+        {
+            if (localNumber == 0) return 1;
+            return localNumber * localFactorial(localNumber - 1);
+        }
+    }
 }
 
