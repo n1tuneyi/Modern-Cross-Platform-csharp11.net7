@@ -121,7 +121,7 @@ public partial class Person
 
         return localFactorial(number);
 
-        statint localFactorial(int localNumber) 
+        int localFactorial(int localNumber) 
         {
             if (localNumber == 0) return 1;
             return localNumber * localFactorial(localNumber - 1);
