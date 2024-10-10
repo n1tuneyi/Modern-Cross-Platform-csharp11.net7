@@ -108,8 +108,26 @@ if (aliceInPerson is Employee explicitAlice)
     WriteLine($"{nameof(aliceInPerson)} IS an Employee");
 }
 
-aliceInEmployee.WriteToConsole();
-aliceInPerson.WriteToConsole();
+//Employee? aliceAsEmployee = aliceInPerson as Employee; 
 
-WriteLine(aliceInEmployee.ToString());
-WriteLine(aliceInPerson.ToString());
+//if (aliceAsEmployee is not null)
+//{
+//    WriteLine($"{nameof(aliceInPerson)} AS an Employee");
+//}
+
+//aliceInEmployee.WriteToConsole();
+//aliceInPerson.WriteToConsole();
+
+//WriteLine(aliceInEmployee.ToString());
+//WriteLine(aliceInPerson.ToString());
+
+
+try
+{
+    john.TimeTravel(when: new(1999, 12, 31));
+    john.TimeTravel(when: new(1950, 12, 25));
+}
+catch (PersonException ex)
+{
+    WriteLine(ex.Message);
+}
