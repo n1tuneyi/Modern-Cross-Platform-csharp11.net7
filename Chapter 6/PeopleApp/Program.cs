@@ -122,12 +122,18 @@ if (aliceInPerson is Employee explicitAlice)
 //WriteLine(aliceInPerson.ToString());
 
 
-try
-{
-    john.TimeTravel(when: new(1999, 12, 31));
-    john.TimeTravel(when: new(1950, 12, 25));
-}
-catch (PersonException ex)
-{
-    WriteLine(ex.Message);
-}
+//try
+//{
+//    john.TimeTravel(when: new(1999, 12, 31));
+//    john.TimeTravel(when: new(1950, 12, 25));
+//}
+//catch (PersonException ex)
+//{
+//    WriteLine(ex.Message);
+//}
+
+string email1 = "pamela@test.com";
+string email2 = "ian&test.com";
+
+WriteLine("{0} is a valid e-mail address: {1}", arg0: email1, arg1: email1.IsValidEmail());
+WriteLine("{0} is a valid e-mail address: {1}", arg0: email2, arg1: email2.IsValidEmail());
