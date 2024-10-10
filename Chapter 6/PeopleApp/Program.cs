@@ -103,10 +103,9 @@ Person aliceInPerson = aliceInEmployee;
 
 //Employee explicitAlice = (Employee) aliceInPerson;
 
-if (aliceInPerson is Employee)
+if (aliceInPerson is Employee explicitAlice)
 {
     WriteLine($"{nameof(aliceInPerson)} IS an Employee");
-    Employee explicitAlice = (Employee)aliceInPerson;
 }
 
 aliceInEmployee.WriteToConsole();
