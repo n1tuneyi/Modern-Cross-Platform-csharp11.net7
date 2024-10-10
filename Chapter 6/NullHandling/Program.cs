@@ -1,20 +1,20 @@
 ﻿int thisCannotBeNull = 4;
 //thisCannotBeNull = null; 
 
-WriteLine(thisCannotBeNull);
+//WriteLine(thisCannotBeNull);
 int? thisCouldBeNull = null;
 
-WriteLine(thisCouldBeNull);
-WriteLine(thisCouldBeNull.GetValueOrDefault());
+//WriteLine(thisCouldBeNull);
+//WriteLine(thisCouldBeNull.GetValueOrDefault());
 
 thisCouldBeNull = 7;
 
-WriteLine(thisCouldBeNull);
-WriteLine(thisCouldBeNull.GetValueOrDefault());
+//WriteLine(thisCouldBeNull);
+//WriteLine(thisCouldBeNull.GetValueOrDefault());
 
 Nullable<int> thisCouldAlsoBeNull = null;
 thisCouldAlsoBeNull = 9;
-WriteLine(thisCouldAlsoBeNull);
+//WriteLine(thisCouldAlsoBeNull);
 
 Address address = new()
 {
@@ -24,5 +24,15 @@ Address address = new()
     Region = "UK"
 };
 
-WriteLine(address.Building?.Length);
-WriteLine(address.Street?.Length);
+//WriteLine(address.Building?.Length);
+//WriteLine(address.Street?.Length);
+
+string authorName = null;
+
+int? x = authorName?.Length;
+
+int? y = authorName?.Length;
+
+int result = authorName?.Length ?? 3;
+
+Console.WriteLine(result);
