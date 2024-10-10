@@ -94,6 +94,23 @@ WriteLine(john.ToString());
 
 FullyImplemented a = new();
 
-PartiallyImplemented b = new(); 
-ISomeImplementation c = new(); 
-INoImplementation d = new(); 
+//PartiallyImplemented b = new(); 
+//ISomeImplementation c = new(); 
+//INoImplementation d = new(); 
+
+Employee aliceInEmployee = new() { Name = "Alice", EmployeeCode = "AA123" };
+Person aliceInPerson = aliceInEmployee;
+
+//Employee explicitAlice = (Employee) aliceInPerson;
+
+if (aliceInPerson is Employee)
+{
+    WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+    Employee explicitAlice = (Employee)aliceInPerson;
+}
+
+aliceInEmployee.WriteToConsole();
+aliceInPerson.WriteToConsole();
+
+WriteLine(aliceInEmployee.ToString());
+WriteLine(aliceInPerson.ToString());
