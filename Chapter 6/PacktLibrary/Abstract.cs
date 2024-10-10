@@ -33,3 +33,18 @@ public class FullyImplemented : PartiallyImplemented, ISomeImplementation
         
     }
 }
+
+public class Singer
+{
+    public virtual void Sing()
+    {
+        WriteLine("Singing...");
+    }
+}
+public class LadyGaga : Singer
+{
+    public sealed override void Sing()
+    {
+        WriteLine("Singing with style...");
+    }
+}
