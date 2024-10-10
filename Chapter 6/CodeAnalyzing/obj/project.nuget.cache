@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "nJ6cM64KOll6IKaMJs+Y1s1HNFPgDhzWXTKaCBPmCxTiAwBYVSaRikvvdWbVUo0nXK0Sba9V3S/lvwoQY/XXHw==",
+  "success": true,
+  "projectFilePath": "E:\\Modern Cross-Platform csharp11.net7\\Chapter 6\\CodeAnalyzing\\CodeAnalyzing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAPTOP\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+    "C:\\Users\\LAPTOP\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+  ],
+  "logs": []
+}
