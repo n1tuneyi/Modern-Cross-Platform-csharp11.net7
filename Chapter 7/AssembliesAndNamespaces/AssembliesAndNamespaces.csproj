@@ -5,11 +5,16 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <SonarQubeExclude>True</SonarQubeExclude>
   </PropertyGroup>
 	<ItemGroup>
 		<Using Include="System.Console" Static="true" />
 	</ItemGroup>
 	<ItemGroup>
 		<Using Remove="System" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	  <PackageReference Include="Packt.CSdotnet.SharedLibrary" Version="7.0.0" />
 	</ItemGroup>
 </Project>
