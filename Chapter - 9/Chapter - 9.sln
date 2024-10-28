@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{E288AC90-DE3E-4E8A-ADF0-FF0105237963}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStreams", "WorkingWithStreams\WorkingWithStreams.csproj", "{D9A33ADA-F404-453A-96DE-F5F1CE254C6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithTarArchives", "WorkingWithTarArchives\WorkingWithTarArchives.csproj", "{76D2EEBA-BEBC-41D1-B0A1-BD1FE664E1AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEncodings", "WorkingWithEncodings\WorkingWithEncodings.csproj", "{A97DEAE4-AA08-451C-ACEC-FE8DC1626E58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerialization", "WorkingWithSerialization\WorkingWithSerialization.csproj", "{F763765E-8D27-40B5-9AEB-12C9706789E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithJson", "WorkingWithJson\WorkingWithJson.csproj", "{A40321FF-7065-4930-9273-49EF3F112C50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E288AC90-DE3E-4E8A-ADF0-FF0105237963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E288AC90-DE3E-4E8A-ADF0-FF0105237963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E288AC90-DE3E-4E8A-ADF0-FF0105237963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E288AC90-DE3E-4E8A-ADF0-FF0105237963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9A33ADA-F404-453A-96DE-F5F1CE254C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9A33ADA-F404-453A-96DE-F5F1CE254C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9A33ADA-F404-453A-96DE-F5F1CE254C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9A33ADA-F404-453A-96DE-F5F1CE254C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D2EEBA-BEBC-41D1-B0A1-BD1FE664E1AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D2EEBA-BEBC-41D1-B0A1-BD1FE664E1AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D2EEBA-BEBC-41D1-B0A1-BD1FE664E1AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D2EEBA-BEBC-41D1-B0A1-BD1FE664E1AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97DEAE4-AA08-451C-ACEC-FE8DC1626E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97DEAE4-AA08-451C-ACEC-FE8DC1626E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97DEAE4-AA08-451C-ACEC-FE8DC1626E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97DEAE4-AA08-451C-ACEC-FE8DC1626E58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F763765E-8D27-40B5-9AEB-12C9706789E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F763765E-8D27-40B5-9AEB-12C9706789E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F763765E-8D27-40B5-9AEB-12C9706789E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F763765E-8D27-40B5-9AEB-12C9706789E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40321FF-7065-4930-9273-49EF3F112C50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40321FF-7065-4930-9273-49EF3F112C50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40321FF-7065-4930-9273-49EF3F112C50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40321FF-7065-4930-9273-49EF3F112C50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F9F0FC1-A9BD-4BF9-992F-C14796876515}
+	EndGlobalSection
+EndGlobal
