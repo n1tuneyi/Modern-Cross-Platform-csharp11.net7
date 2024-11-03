@@ -1,0 +1,16 @@
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\bin\Debug\net8.0\Northwind.Common.DataContext.Sqlite.deps.json
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\bin\Debug\net8.0\Northwind.Common.DataContext.Sqlite.dll
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\bin\Debug\net8.0\Northwind.Common.DataContext.Sqlite.pdb
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\bin\Debug\net8.0\Northwind.Common.EntityModels.Sqlite.dll
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\bin\Debug\net8.0\Northwind.Common.EntityModels.Sqlite.pdb
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.csproj.AssemblyReference.cache
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.GeneratedMSBuildEditorConfig.editorconfig
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.AssemblyInfoInputs.cache
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.AssemblyInfo.cs
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.csproj.CoreCompileInputs.cache
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.sourcelink.json
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.csproj.CopyComplete
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.dll
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\refint\Northwind.Common.DataContext.Sqlite.dll
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\Northwind.Common.DataContext.Sqlite.pdb
+E:\Modern Cross-Platform csharp11.net7\Chapter - 12 Practical Apps\Northwind.Common.DataContext.Sqlite\obj\Debug\net8.0\ref\Northwind.Common.DataContext.Sqlite.dll

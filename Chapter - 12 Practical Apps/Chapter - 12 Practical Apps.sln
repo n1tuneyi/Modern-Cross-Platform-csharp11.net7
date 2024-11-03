@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.EntityModels.Sqlite", "Northwind.Common.EntityModels.Sqlite\Northwind.Common.EntityModels.Sqlite.csproj", "{D76F6744-0E85-42C9-9412-81934184B22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.Sqlite", "Northwind.Common.DataContext.Sqlite\Northwind.Common.DataContext.Sqlite.csproj", "{49AFEED6-334F-4861-82B8-08D62B921517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.UnitTests", "Northwind.Common.UnitTests\Northwind.Common.UnitTests.csproj", "{503B9328-6745-4A41-BF69-556AB1CDBED6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D76F6744-0E85-42C9-9412-81934184B22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76F6744-0E85-42C9-9412-81934184B22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76F6744-0E85-42C9-9412-81934184B22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76F6744-0E85-42C9-9412-81934184B22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AFEED6-334F-4861-82B8-08D62B921517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AFEED6-334F-4861-82B8-08D62B921517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AFEED6-334F-4861-82B8-08D62B921517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AFEED6-334F-4861-82B8-08D62B921517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503B9328-6745-4A41-BF69-556AB1CDBED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503B9328-6745-4A41-BF69-556AB1CDBED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503B9328-6745-4A41-BF69-556AB1CDBED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503B9328-6745-4A41-BF69-556AB1CDBED6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15944B1F-3172-4B2D-A1BF-06A43D67562A}
+	EndGlobalSection
+EndGlobal
